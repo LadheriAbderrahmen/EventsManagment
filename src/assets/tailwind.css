@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.bg-zoom-out {
+    background-size: 30%;
+}
