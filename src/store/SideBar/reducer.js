@@ -1,6 +1,6 @@
 
 const INIT={
-    CurrElem:''
+    CurrElem:'Home'
 }
 
 const SideBarReducer=(state = INIT ,action )=>{

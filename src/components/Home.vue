@@ -1,4 +1,10 @@
 <template>
+        <div v-if="EventDataRedux.length === 0" class="h-[80vh]  flex items-center justify-center ">
+            <div class="flex flex-col gap-3 justiy-center items-center">
+            <font-awesome-icon icon="calendar-days" class="w-[13rem] h-[13rem] text-orange-400"/>
+                <p class="text-gray-700 font-semibold">create you event Here !</p>
+        </div>
+        </div>
 
     <div v-for="(item , index) in EventDataRedux" class="flex flex-col mt-5 ">
         <EventCard :EventId="item.EventId" :name='item.EventName' :date="item.EventDate" :desc="item.descripion" :loco="item.Location" :cap="item.Capacity"/>
@@ -19,8 +25,6 @@
             EventDataRedux.value = store.getState().EventsReducer.Events
         })
     })
-
-
 
 
     const Eventsdata=[

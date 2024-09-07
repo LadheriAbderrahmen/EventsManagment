@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white relative h-[100vh] w-[14rem] h-full border-r-[1px] border-gray-200">
-        <div class="flex items-center justify-center text-3xl font-extrabold text-orange-400 h-[5rem] pl-5">
-            Logo
+        <div class="flex items-center justify-center text-3xl font-extrabold  h-[5rem] pl-5">
+            Best<span class="text-orange-400">Event</span>
         </div>
         <div class="flex flex-col gap-5 mt-10 mx-5">
             <div v-for="(item) in Menu">

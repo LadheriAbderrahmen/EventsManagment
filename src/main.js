@@ -7,10 +7,10 @@ import store from './store/store';
 // Import FontAwesome core and icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faUserSecret, faHouse, faPlus, faLocationDot, faBars, faPenSquare, faTrash, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faUserSecret, faHouse, faPlus, faLocationDot, faBars, faPenSquare, faTrash, faPenToSquare, faCalculator, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 // Add icons to the library
-library.add(faLocationDot, faHouse, faPlus ,faBars , faPenToSquare , faTrash);
+library.add(faLocationDot, faHouse, faPlus ,faBars , faPenToSquare , faTrash ,faCalendarDays);
 
 
 const app = createApp(App);
