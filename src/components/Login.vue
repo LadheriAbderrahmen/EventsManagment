@@ -4,17 +4,15 @@
     <div class="flex flex-col  items-center sm:items-start sm:flex-row w-full sm:h-[25rem]">
       <div class="flex-1 flex flex-col gap-5 ">
         <div class="sm:text-5xl font-extrabold text-orange-400  mt-10 ml-10">
-          Plan Your Perfect Event with Ease <br/>
-         <span class="text-orange-700"> PlanMaster </span>
+          Plan Your Perfect Event with Ease <br />
+          <span class="text-orange-700"> PlanMaster </span>
         </div>
-        <button
-        @click="showLogin = true"
-        class="border-[1px] font-bold text-base  border-orange-400 rounded-[10px] py-1 px-2  w-40 text-orange-700 ml-10 mt-5">Planifier</button>
+        <button @click="showLogin = true"
+          class="border-[1px] font-bold text-base  border-orange-400 rounded-[10px] py-1 px-2  w-40 text-orange-700 ml-10 mt-5">Planifier</button>
       </div>
       <div class="flex-1 flex justify-center mt-5 sm:mt-0">
-        <div
-        v-show="showLogin"
-        class="border-[1px] border-[black] py-20 pt-[4rem] px-10 rounded-[10px] backdrop-blur  ">
+        <div v-show="showLogin"
+          class="border-[1px] border-[black] py-20 pt-[4rem] px-10 rounded-[10px] backdrop-blur  ">
           <div class="font-bold text-2xl">Login</div>
           <form @submit.prevent="handlesubmit" class="mt-5">
             <div v-for="(item, index) in LoginForm" class="flex flex-col gap-2 mt-2">
@@ -30,12 +28,7 @@
           </form>
         </div>
       </div>
-
     </div>
-
-
-
-
   </div>
 </template>
 
@@ -45,7 +38,7 @@ import { useRouter } from 'vue-router';
 
 import { ref } from 'vue';
 
-const showLogin= ref(false)
+const showLogin = ref(false)
 const router = useRouter()
 const LoginForm = [
   {
@@ -66,11 +59,15 @@ const users = [
   {
     email: "abderrahmen@gmail.com",
     password: 'abdou123'
+  },
+  {
+    email: 'oussema@gmail.com',
+    password: 'oussema123'
   }
 ]
 const userInfo = ref({
-  email: '',
-  password: ''
+  email: 'oussema@gmail.com',
+  password: 'oussema123'
 })
 
 const handlesubmit = () => {
@@ -84,5 +81,4 @@ const handlesubmit = () => {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped></style>
